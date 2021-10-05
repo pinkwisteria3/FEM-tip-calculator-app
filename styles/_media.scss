@@ -1,0 +1,73 @@
+@media(min-width:1440px){
+    .container{
+        max-width:920px;
+        width:100%;
+        margin-top:5.6rem;
+        display:flex;
+        padding:0 2rem 1.6rem 2.8rem;
+        gap:3rem;
+
+    }
+    .logo{
+        margin-top:113px;
+    }
+    .inputs{
+        width:379px;
+        height:388px;
+        display:flex;
+        flex-direction:column;
+        margin-top:2.2rem;
+       
+    }
+
+    .tip{
+        margin-top:2.5rem;
+        margin-bottom:0.5rem;
+        .tip-grid{
+            grid-template-columns:repeat(3,1fr);
+            button{
+                width:117px;
+            }
+            input{
+                text-align:center;
+                width:117px;
+                &::placeholder{
+                    text-align:center;
+                    padding-right:0;
+                }
+            }
+        }
+        
+    }
+    .people{
+        .people-input-div{
+            .people-number{
+                padding:1rem 0;
+            }
+            .people-img{
+                position:absolute;
+                left:1.2rem;
+                top:1.2rem;
+            }
+        }
+    
+    }
+    .output{
+        width:413px;
+        height:417px;
+        padding:39px 42px;
+        .tip-amount{
+            
+            p{
+                margin:0;
+            }
+        }
+        .dollar-amount{
+            font-size:3rem;
+            margin-top:0;
+        }
+    }
+    .reset-btn{
+        margin-top:4.5rem;
+    }
+}

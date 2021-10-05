@@ -1,0 +1,380 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+  background: #c5e4e7;
+}
+
+img {
+  /*width:100%;
+    height:auto;*/
+}
+
+main {
+  margin: 0 auto;
+}
+
+.title {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container {
+  background: white;
+  margin: 41px auto;
+  max-width: 100vw;
+  width: 100%;
+  padding: 1.8rem 2rem;
+  border-radius: 1rem;
+}
+
+label {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #5e7a7d;
+  font-family: "Space Mono", monospace;
+  text-align: left;
+}
+
+input {
+  width: 100%;
+  background: #f4fafa;
+  text-align: right;
+  padding-right: 0.5rem;
+  color: #00494d;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: auto;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+input:hover {
+  border: 2px solid #26c0ab;
+}
+
+input::-webkit-input-placeholder {
+  text-align: right;
+  color: #00494d;
+  padding-right: 1rem;
+}
+
+input:-ms-input-placeholder {
+  text-align: right;
+  color: #00494d;
+  padding-right: 1rem;
+}
+
+input::-ms-input-placeholder {
+  text-align: right;
+  color: #00494d;
+  padding-right: 1rem;
+}
+
+input::placeholder {
+  text-align: right;
+  color: #00494d;
+  padding-right: 1rem;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.bill-input-div {
+  position: relative;
+}
+
+.bill-input-div img {
+  position: absolute;
+  left: 1.1rem;
+  top: 1.1rem;
+}
+
+.bill-input-div input {
+  margin-top: 0.4rem;
+  padding: 0.5rem 0.25rem;
+}
+
+.bill-input-div input::-webkit-input-placeholder {
+  padding-right: 1rem;
+}
+
+.bill-input-div input:-ms-input-placeholder {
+  padding-right: 1rem;
+}
+
+.bill-input-div input::-ms-input-placeholder {
+  padding-right: 1rem;
+}
+
+.bill-input-div input::placeholder {
+  padding-right: 1rem;
+}
+
+.tip {
+  margin-top: 1.8rem;
+}
+
+.tip .tip-grid {
+  margin-top: 1rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.tip .tip-grid button {
+  outline: none;
+  /*width:146px;*/
+  width: 38.93vw;
+  height: 48px;
+  border: none;
+  color: white;
+  background: #00494d;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.tip .tip-grid button:hover {
+  background: #9FE8DF;
+  color: #00474B;
+}
+
+.tip .tip-grid input {
+  border-radius: 6px;
+  /*width:146px;*/
+  width: 38.93vw;
+  height: 48px;
+}
+
+.tip .tip-grid input::-webkit-input-placeholder {
+  font-size: 24px;
+  font-weight: 700;
+  color: #5e7a7d;
+  padding-right: 0.6rem;
+}
+
+.tip .tip-grid input:-ms-input-placeholder {
+  font-size: 24px;
+  font-weight: 700;
+  color: #5e7a7d;
+  padding-right: 0.6rem;
+}
+
+.tip .tip-grid input::-ms-input-placeholder {
+  font-size: 24px;
+  font-weight: 700;
+  color: #5e7a7d;
+  padding-right: 0.6rem;
+}
+
+.tip .tip-grid input::placeholder {
+  font-size: 24px;
+  font-weight: 700;
+  color: #5e7a7d;
+  padding-right: 0.6rem;
+}
+
+.people {
+  margin-top: 2rem;
+  position: relative;
+}
+
+.people small {
+  position: absolute;
+  font-family: "Space Mono", monospace;
+  color: red;
+  right: 0;
+  display: none;
+}
+
+.people small.warning {
+  display: inline-block;
+}
+
+.people .people-input-div {
+  position: relative;
+}
+
+.people .people-input-div .people-number {
+  padding: 0.7rem;
+}
+
+.people .people-input-div .people-number::-webkit-input-placeholder {
+  padding-right: 0.7rem;
+}
+
+.people .people-input-div .people-number:-ms-input-placeholder {
+  padding-right: 0.7rem;
+}
+
+.people .people-input-div .people-number::-ms-input-placeholder {
+  padding-right: 0.7rem;
+}
+
+.people .people-input-div .people-number::placeholder {
+  padding-right: 0.7rem;
+}
+
+.people .people-input-div .people-img {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+}
+
+.output {
+  width: 100%;
+  background: #00494d;
+  color: #fff;
+  border-radius: 1rem;
+  margin-top: 2.1rem;
+  padding: 20px 18px;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: "Space Mono", monospace;
+}
+
+.output span {
+  font-size: 13px;
+  color: #7f9c9f;
+}
+
+.output .dollar-amount {
+  font-size: 2rem;
+  line-height: auto;
+  letter-spacing: -0.67px;
+  color: #26c0ab;
+  margin-top: 0.8rem;
+}
+
+.output .total-output {
+  margin-top: -1.3rem;
+}
+
+.output .reset-btn {
+  width: 100%;
+  padding: 0.6rem 0;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: inherit;
+  color: #00494d;
+  background: #26c0ab;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.output .reset-btn:hover {
+  background: #9FE8DF;
+  color: #00474B;
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 920px;
+    width: 100%;
+    margin-top: 5.6rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 2rem 1.6rem 2.8rem;
+    gap: 3rem;
+  }
+  .logo {
+    margin-top: 113px;
+  }
+  .inputs {
+    width: 379px;
+    height: 388px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 2.2rem;
+  }
+  .tip {
+    margin-top: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .tip .tip-grid {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  .tip .tip-grid button {
+    width: 117px;
+  }
+  .tip .tip-grid input {
+    text-align: center;
+    width: 117px;
+  }
+  .tip .tip-grid input::-webkit-input-placeholder {
+    text-align: center;
+    padding-right: 0;
+  }
+  .tip .tip-grid input:-ms-input-placeholder {
+    text-align: center;
+    padding-right: 0;
+  }
+  .tip .tip-grid input::-ms-input-placeholder {
+    text-align: center;
+    padding-right: 0;
+  }
+  .tip .tip-grid input::placeholder {
+    text-align: center;
+    padding-right: 0;
+  }
+  .people .people-input-div .people-number {
+    padding: 1rem 0;
+  }
+  .people .people-input-div .people-img {
+    position: absolute;
+    left: 1.2rem;
+    top: 1.2rem;
+  }
+  .output {
+    width: 413px;
+    height: 417px;
+    padding: 39px 42px;
+  }
+  .output .tip-amount p {
+    margin: 0;
+  }
+  .output .dollar-amount {
+    font-size: 3rem;
+    margin-top: 0;
+  }
+  .reset-btn {
+    margin-top: 4.5rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
